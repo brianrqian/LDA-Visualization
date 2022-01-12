@@ -4,6 +4,18 @@ from collections import namedtuple, OrderedDict
 Color = namedtuple('RGB','red, green, blue')
 colors = {} #dict of colors
 
+#hex list of 50 colors
+
+hex_colors = ['#66CDAA','#0000FF','#8A2BE2','#CD3333','#8EE5EE','#FF6103', '#66CD00',
+'#FF7256', '#6495ED', '#DC143C', '#FFB90F', '#006400', '#B23AEE', '#E9967A', '#B4EEB4',
+'#483D8B', '#00CED1', '#FF1493', '#8B0A50', '#00B2EE', '#8B1A1A', '#FFD700', '#00FF00',
+'#FF69B4', '#8B3A3A', '#4B0082', '#FFF68F', '#BFEFFF', '#FFF0F5', '#EE9572', '#20B2AA', 
+'#8470FF', '#32CD32', '#EEEED1', '#8B008B', '#B452CD', '#3CB371', '#E3A869', '#FFE4E1',
+'#EE4000', '#FF82AB', '#33A1C9', '#FFBBFF', '#872657', '#FFC1C1', '#CD0000', '#436EEE',
+'#8E388E', '#7171C6', '#FFFF00']
+
+#node_cols = random.sample(hex_colors, num_topics)
+
 class RGB(Color):
     def hex_format(self):
         '''Returns color in hex format'''
